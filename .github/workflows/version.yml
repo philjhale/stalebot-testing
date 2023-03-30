@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: get package version
         id: get-version
-        run: echo "VERSION=$(node -e "process.stdout.write(require('../../package.json').version.split('.').join('-'))")" >> $GITHUB_OUTPUT
+        run: echo "VERSION=$(node -e "process.stdout.write(require('./package.json').version.split('.').join('-'))")" >> $GITHUB_OUTPUT
       - name: output version
         id: output-version
         run: echo "version is ${{steps.get-version.outputs.VERSION}}"
