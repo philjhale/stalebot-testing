@@ -1,5 +1,19 @@
 {
-  "name": "test",
+  "name": "stalebot-testing",
+  "version": "1.0.0",
   "description": "",
-  "version": "1.2.3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philjhale/stalebot-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philjhale/stalebot-testing/issues"
+  },
+  "homepage": "https://github.com/philjhale/stalebot-testing#readme"
 }
