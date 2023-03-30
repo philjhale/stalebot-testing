@@ -6,6 +6,8 @@ jobs:
   version:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout code
+        uses: actions/checkout@v3
       - name: get package version
         id: get-version
         run: echo "VERSION=$(node -e "process.stdout.write(require('./package.json').version.split('.').join('-'))")" >> $GITHUB_OUTPUT
